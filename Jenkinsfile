@@ -8,7 +8,7 @@ pipeline{
         }
         stage('STAGE2'){
             steps{
-                sh 'python3 python.py %X_VALUE% %Y_VALUE%'
+                sh 'python3 python.py ${X_VALUE} ${Y_VALUE}'
             }
         }
     }
