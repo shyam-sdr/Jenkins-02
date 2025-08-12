@@ -1,7 +1,9 @@
-#First python test file
+#Input with parameters
 
-print("This is a jenkins build file !")
-print("##############################")
-print("Building jenkins pipeline ok !!!")
-print("################################")
-print("Thank You")
+import sys
+print("Jenkins build using parameters !")
+X_VALUE = int(sys.argv[1])
+Y_VALUE = int(sys.argv[2])
+print("Multiply= ", (X_VALUE * Y_VALUE))
+
+
