@@ -6,9 +6,9 @@ pipeline{
                 sh 'python3 --version'
             }
         }
-        stage('hello'){
+        stage('STAGE2'){
             steps{
-                sh 'python3 python.py'
+                sh 'python3 python.py %X_VALUE% %Y_VALUE%'
             }
         }
     }
